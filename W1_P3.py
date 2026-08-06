@@ -4,37 +4,44 @@ Course : MScIT Sem-3
 Roll No :250160450347
 Name : Shekh Vishal
 Practical: Week1 Practical 1
-Description:-  Student Marks Analysis 
-                Create a Python program to: 
-                    ● Store marks of 10 students in a list. 
-                    ● Convert the list into tuples. 
-                    ● Store student names and marks in a dictionary. 
-                    ● Find: 
-                        ○ Highest marks 
-                        ○ Lowest marks 
-                        ○ Average marks 
-                    ● Display students scoring above average. 
-                    ● Remove duplicate marks using sets.
+Description:- Student Performance Analytics System Develop a Python program to manage and analyse the academic performance of a class.
+                The program should:
+                Accept the details of 10 students, including:
+                    Roll Number
+                    Name
+                    Marks in 5 subjects
+                Store the student information using appropriate Python data structures (lists, tuples, and dictionaries).
+                Calculate for each student:
+                    Total Marks
+                    Percentage
+                    Grade (A, B, C, D, F)
+                Display:
+                    Class average percentage
+                    Highest scorer(s)
+                    Lowest scorer(s)
+                    Students scoring above the class average
+                    Students who failed in one or more subjects
+                Create a dictionary where:
+                    Key = Grade
+                    Value = List of students belonging to that grade
+                Display the names of students in alphabetical order without modifying the original records.
+                Find the second-highest scorer without sorting the entire dataset.
+                Display the subject in which the class has obtained the highest average marks.
+                Remove duplicate student names (if any) and report the duplicate entries.
+
+
                     
  '''
 
 
-<<<<<<< HEAD
-
-my_dict=dict();
-=======
 #dict
 my_dict=dict();
 
->>>>>>> e386b78 (practical)
 student=0
 my_dict[student] = {}
 my_dict[student]['mark'] = {}
 
-<<<<<<< HEAD
-=======
 #list
->>>>>>> e386b78 (practical)
 std_rollNo_list=list();
 std_name_list=list();
 std_age_list=list();
@@ -46,18 +53,12 @@ percentage_list=list()
 result_list=list()
 
 
-<<<<<<< HEAD
-=======
 #function insert
->>>>>>> e386b78 (practical)
 def insert_data(n_std):
     result=""
     
     for i in range(0,n_std):
-<<<<<<< HEAD
-=======
         print()
->>>>>>> e386b78 (practical)
         Roll_No=input(" Roll no:")
         
     
@@ -72,11 +73,7 @@ def insert_data(n_std):
         
         
         if ((c < 0 or c > 100) or (java < 0 or java > 100) or (python < 0 or python > 100)):
-<<<<<<< HEAD
-            print("Please enter valid marks (0-100).")
-=======
             print("Please enter valid marks.. (0-100).")
->>>>>>> e386b78 (practical)
             break
            
         std_rollNo_list.append(Roll_No)
@@ -103,11 +100,7 @@ def insert_data(n_std):
             
         
         
-<<<<<<< HEAD
-    
-=======
     #tuple castting
->>>>>>> e386b78 (practical)
     RollNo_tuple = tuple(std_rollNo_list)
     Name_tuple = tuple(std_name_list)
     Age_tuple = tuple(std_age_list)
@@ -118,21 +111,7 @@ def insert_data(n_std):
     p_tuple = tuple(percentage_list)
     result_tuple = tuple(result_list)
     
-<<<<<<< HEAD
-    print(std_rollNo_list)
-    print(std_name_list)
-    print(std_age_list)
-    print(c_mark)
-    print(java_mark)
-    print(python_mark)
-    print(mark_of_sum_list)
-    print(percentage_list)
-    print(result_list)
-    
- 
-=======
   
->>>>>>> e386b78 (practical)
               
     for j in range(len(RollNo_tuple)):
 
@@ -291,11 +270,7 @@ def lowest_marks():
     print()
     print("___________________________________________________________________")
     print()
-<<<<<<< HEAD
-    print("\n===== Lowest Marks =====")
-=======
     print("===== Lowest Marks =====")
->>>>>>> e386b78 (practical)
     print("Roll No :", std_rollNo_list[index])
     print("Name :", std_name_list[index])
     print("Age :", std_age_list[index])
@@ -318,11 +293,7 @@ def average_marks():
 
     avg = sum(mark_of_sum_list) / len(mark_of_sum_list)
 
-<<<<<<< HEAD
-    print("\n===== Average Marks =====")
-=======
     print("===== Average Marks =====")
->>>>>>> e386b78 (practical)
     print("Average Marks :", avg)
     
     
@@ -339,11 +310,7 @@ while 1:
     print("6. show data");
     print("7. Mark sheet print")
     print("8. exit");
-<<<<<<< HEAD
-    choice=int(input("enter number:"))
-=======
     choice=int(input("enter choice(1-8):"))
->>>>>>> e386b78 (practical)
     print()
     match(choice):
         case 1 :
